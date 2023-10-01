@@ -1,0 +1,32 @@
+git remote set-url origin git@github.com:phpia/cityrobot.git
+
+compila
+rm -Rf server/dist/public
+yarn build
+mv app/ui/dist server/dist/public
+mv app/widget/dist/index.html server/dist/public/bot.html
+cp -r app/widget/dist/assets/* server/dist/public/assets/
+
+
+netstat -tulpn | grep :3000
+netstat -tulpn | grep :5173
+
+
+ npx prisma db push
+ 
+ 
+ 
+update 
+yarn install
+cd app
+yarn install
+cd ui 
+yarn install
+cd ../script
+yarn install
+cd ../widget
+yarn install
+cd ../../server
+yarn install
+cd ..
+yarn build

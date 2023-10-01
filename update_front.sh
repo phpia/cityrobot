@@ -1,0 +1,13 @@
+yarn install
+cd app
+yarn install
+cd ui 
+yarn install
+cd ../script
+yarn install
+cd ../widget
+yarn install
+cd ../../server
+yarn install
+cd ..
+yarn build

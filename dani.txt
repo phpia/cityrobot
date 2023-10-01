@@ -11,8 +11,11 @@ cp -r app/widget/dist/assets/* server/dist/public/assets/
 netstat -tulpn | grep :3000
 netstat -tulpn | grep :5173
 
+First time
+npx prisma migrate deploy
 
- npx prisma db push
+Updates
+npx prisma db push
  
  
  

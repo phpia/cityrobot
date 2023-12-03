@@ -25,5 +25,3 @@ jobs:
           tags: |
             n4z3m/dialoqbase-next:latest
           push: true
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
